@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>符号演示</title>
+    <style>
+      pre {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>可以打开控制台尝试</p>
+    <script src="messy.js"></script>
+    <script>
+      function rainbow() {
+        var range = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += range[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      list.forEach(function (item) {
+        var color = rainbow();
+        console.log('\n\n\n');
+        console.log('%c ' + item.text, 'color:' + color);
+
+        var ele = document.createElement('pre');
+        ele.textContent = item.text;
+        ele.style.color = color;
+        document.body.appendChild(ele);
+      });
+    </script>
+  </body>
+
+</html>

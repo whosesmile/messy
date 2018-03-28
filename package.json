@@ -1,0 +1,11 @@
+{
+  "name": "messy",
+  "version": "1.0.0",
+  "description": "just fun~",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "whosesmile@gmail.com",
+  "license": "ISC"
+}
